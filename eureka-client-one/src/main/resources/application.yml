@@ -1,0 +1,12 @@
+server:
+  port: 8762
+
+spring:
+  application:
+    name: api-one
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:2222/eureka/
+
