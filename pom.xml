@@ -11,10 +11,13 @@
         <module>eureka-server</module>
         <module>eureka-server-backup01</module>
         <module>eureka-server-backup02</module>
+
         <module>eureka-client-one</module>
         <module>eureka-client-two</module>
         <module>ribbon-rest</module>
         <module>feign</module>
+
+        <module>spring-base</module>
     </modules>
     <packaging>pom</packaging>
 
