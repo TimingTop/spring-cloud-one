@@ -18,6 +18,11 @@
         <module>feign</module>
 
         <module>spring-base</module>
+        <module>dubbo-service</module>
+        <module>dubbo-api</module>
+        <module>zuul-gateway</module>
+        <module>cloud-admin</module>
+        <module>cloud-gateway</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -88,6 +93,12 @@
                 <version>1.4.6.RELEASE</version>
             </dependency>
 
+            <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-zuul -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-zuul</artifactId>
+                <version>1.4.6.RELEASE</version>
+            </dependency>
 
 
 
