@@ -1,0 +1,23 @@
+server:
+  port: 5555
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:2222/eureka/
+spring:
+  application:
+    name: timing-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: gate_route
+          url: lb://SERVICE-FEIGN
+          predicates:
+            - Path=/gateway-one/**
+
+
+
+

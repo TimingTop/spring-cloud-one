@@ -3,8 +3,27 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:2222/eureka/
 server:
-  port: 8764
+  port: 4444
 spring:
   application:
     name: service-ribbon
+  cloud:
+    loadbalancer:
+      retry:
+        enabled: true
+hystrix:
+  command:
+    default:
+      fallback:
+        enabled: true
+      circuitBreaker:
+        forceOpen: rue
+      execution:
+        timeout:
+          enabled: false
+        isolation:
+          thread:
+            interruptOnTimeout: true
+
+
 

@@ -14,10 +14,10 @@ public class HelloService {
 
     @HystrixCommand(fallbackMethod = "hiError")
     public String hiService(String name) {
-        return restTemplate.getForObject("http://API-ONE/hi?name=" + name, String.class);
+        return restTemplate.getForObject("http://api-onE/hi?name=" + name, String.class);
     }
 
-    public String hiError(String name) {
+    public String hiError(String name, Throwable e) {
         return "hi, " + name + ", sorry, error!";
     }
 }
