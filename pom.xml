@@ -25,6 +25,7 @@
         <module>cloud-gateway</module>
         <module>spring-cloud-gateway</module>
         <module>cloud-session</module>
+        <module>netty</module>
     </modules>
     <packaging>pom</packaging>
 
