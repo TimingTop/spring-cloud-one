@@ -26,6 +26,8 @@
         <module>spring-cloud-gateway</module>
         <module>cloud-session</module>
         <module>netty</module>
+        <module>data-elasticSearch</module>
+        <module>cloud-swagger</module>
     </modules>
     <packaging>pom</packaging>
 
