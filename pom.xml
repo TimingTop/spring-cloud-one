@@ -28,6 +28,8 @@
         <module>netty</module>
         <module>data-elasticSearch</module>
         <module>cloud-swagger</module>
+        <module>package-demo-one</module>
+        <module>package-demo-two</module>
     </modules>
     <packaging>pom</packaging>
 
